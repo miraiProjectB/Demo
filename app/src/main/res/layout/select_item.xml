@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/title">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.44"
+        android:id="@+id/比較項目選択">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="比較項目選択"
+            android:id="@+id/textView"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="入眠までの時間"
+        android:id="@+id/onset_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:text="レム睡眠の割合"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:text="ノンレム睡眠の割合"
+        android:id="@+id/button5"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:text="深い眠りの割合"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:text="浅い眠りの割合"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:text="睡眠の評価"
+        android:id="@+id/button6"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:onClick="onClick"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:id="@+id/undo_button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick"/>
+
+</LinearLayout>

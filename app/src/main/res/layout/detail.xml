@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShosaiActivity_sleep">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="特定の日の詳細"
+            android:id="@+id/textView15"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.55">
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="2015年10月21日"
+                android:id="@+id/textView18"
+                android:layout_gravity="center_horizontal|top"/>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="160dp"
+                android:text="
+活動量
+入眠までの時間
+睡眠時間
+睡眠に対する主観評価
+行動メモ"
+                android:id="@+id/textView27"
+                android:layout_gravity="center"/>
+
+
+        </FrameLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="次へ"
+            android:id="@+id/next_button"
+            android:onClick="onClick"
+            android:layout_gravity="left|center_vertical" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="前へ"
+            android:id="@+id/before_button"
+            android:onClick="onClick"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:id="@+id/undo_button"
+        android:onClick="onClick"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
